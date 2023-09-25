@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 156, 111);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 23px;
+    width: 370px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 3px;
+    box-shadow: 5px 10px #2668c5
+}
+
+.container .title {
+    text-align: center;
+}
+
+.container .title::before {
+    content: "";
+    height: 3px;
+    width: 180px;
+    background-color: blue;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.container .quote {
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+.container .quote .bxs-quote-left {
+    font-size: 24px;
+}
+
+.container .quote .bxs-quote-right {
+    font-size: 24px;
+    float: right;
+    margin-top: -13px;
+}
+
+.container .quote p {
+    margin-left: 27px;
+    margin-top: -22px;
+    text-align: center;
+    margin-right: 28px;
+}
+
+.container .quote h6 {
+    text-align: center;
+    margin-top: 24px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.container button {
+    all: unset;
+    height: 40px;
+    width: 130px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    float: left;
+    margin-left: 20px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.container .new-quote-btn {
+    border: none;
+    background: #483D8B;
+    color: white;
+}
+
+.container .tweet-btn {
+    color: #00acee;
+    border-color: #00acee;
+}
+
+.container .tweet-btn span {
+    margin-left: 7px;
+    color: black;
+}
+
+::selection {
+    background: #483D8B;
+    color: white;
+}
